@@ -25,17 +25,16 @@
             background-color: #ffffff;
         }
         #ar-button {
-            background-color: #ffffff;
-            border-radius: 4px;
+            width: 120px;
+            height: 60px;
+            background-color: #03b4a6;
+            color:black;
             border: none;
             position: absolute;
-            bottom: 16px;
-            right: 16px;
-            padding: 12px 24px;
+            bottom: 35px;
+            right: 35px;
             font-family: sans-serif;
-            font-weight: bold;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-            cursor: pointer;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -45,20 +44,22 @@
    <model-viewer        
         src="Modelos/ModeloMesaCadeirante.glb" 
         alt="Modelo 3D da Mesa"
-        ar
         camera-controls
         touch-action="pan-y"
-        shadow-intensity="1">
+        shadow-intensity="1"
+        ar>
+        <button id="ar-button" slot="ar-button">Começar AR</button>
     </model-viewer>
     <br>
     <h3>Compre Gabinete</h3>
     <model-viewer        
         src="Modelos/ModeloGabineteCadeirante.glb" 
         alt="Modelo 3D do Gabinete"
-        ar
         camera-controls
         touch-action="pan-y"
-        shadow-intensity="1">
+        shadow-intensity="1"
+        ar>
+        <button id="ar-button" slot="ar-button">Começar AR</button>
     </model-viewer>
     <br>
     <h3>Compre Balcão de Cozinha</h3>
