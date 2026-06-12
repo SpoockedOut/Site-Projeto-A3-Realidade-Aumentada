@@ -5,63 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            background-color: #965417;
-            text-align:center;
-            place-items: center;
-        }
-        model-viewer {
-            width: 500px;
-            height: 500px;
-            --poster-color: transparent;
-            background-color: #ffffff;
-        }
-        #ar-button {
-            width: 120px;
-            height: 60px;
-            background-color: #03b4a6;
-            color:black;
-            border: none;
-            position: absolute;
-            bottom: 35px;
-            right: 35px;
-            font-family: sans-serif;
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="bar"><a href="index.html"><button class="bar-button">Início</button></a></div>
     <h1>Olá</h1><br><br><br>
-    <h3>Compre Mesa</h3>
-   <model-viewer        
-        src="Modelos/ModeloMesaCadeirante.glb" 
-        alt="Modelo 3D da Mesa"
-        camera-controls
-        touch-action="pan-y"
-        shadow-intensity="1"
-        ar>
-        <button id="ar-button" slot="ar-button">Começar AR</button>
-    </model-viewer>
+    <div id="wrapper-button">
+    <a href="mesa.html"><button class="item-button">Mesa de Jantar<br><img src="Imagens/Mesa.png" alt="Mesa" width="156" height="120"></button></a>
     <br>
-    <h3>Compre Gabinete</h3>
-    <model-viewer        
-        src="Modelos/ModeloGabineteCadeirante.glb" 
-        alt="Modelo 3D do Gabinete"
-        camera-controls
-        touch-action="pan-y"
-        shadow-intensity="1"
-        ar>
-        <button id="ar-button" slot="ar-button">Começar AR</button>
-    </model-viewer>
+    <a href="gabinete.html"><button class="item-button">Gabinete<br><img src="Imagens/Gabinete.png" alt="Mesa" width="120" height="150"></button></a>
     <br>
-    <h3>Compre Balcão de Cozinha</h3>
+    <a href="balcao.html"><button class="item-button">Balcão de Cozinha<br><img src="Imagens/Balcao.png" alt="Mesa" width="227" height="120"></button></a>
+    </div>
 </body>
 </html>
