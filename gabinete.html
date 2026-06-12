@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="bar"><a href="index.html"><button class="bar-button">Início</button></a></div>
+    <h1>Gabinete</h1><br><br><br>
+    <h4>Gabinete de madeira maciça com 3 gavetas. Possui 68,2 cm de comprimento, 43,6 cm de largura e 112,8 cm de altura. <br>Recomendação de Limpeza: Limpar com pano seco para retirar o pó. Não aplicar produtos abrasivos.</h4>
+    <div class="wrapper-ar">
+        <model-viewer        
+            src="Modelos/ModeloGabineteCadeirante.glb" 
+            alt="Modelo 3D do Gabinete"
+            camera-controls
+            touch-action="pan-y"
+            shadow-intensity="1"
+            ar>
+            <button id="ar-button" slot="ar-button">Começar AR</button>
+        </model-viewer>
+    </div>
+</body>
+</html>
