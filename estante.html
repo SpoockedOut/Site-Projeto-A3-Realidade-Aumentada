@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="bar">
+        <ul>
+            <li><a href="index.html"><button class="bar-button">Início</button></a></li>
+            <li style="float:right"><a href="sobre.html"><button class="bar-button">Sobre</button></a></li>
+        </ul>
+    </div>
+    <h1>Estante</h1><br><br><br>
+    <h4>Estante de madeira maciça com duas prateleiras.<br>O móvel possui 110 cm de comprimento, 63 cm de largura e 141,2 cm de altura.<br>A prateleira de baixo possui 61 cm de largura, e a prateleira de cima possui 30 cm de largura. Ambas possuem 106 cm de comprimento e 2 cm de altura.<br>
+        Foi dado amplo espaço na parte inferior da estante para uma que uma pessoa usando cadeira de rodas possa chegar perto suficiente para alcançar algo na estante. Além disso, a prateleira superior possui uma largura menor para que a pessoa possa usá-la.</h4>
+    <div class="wrapper-ar">
+        <model-viewer        
+            src="Modelos/ModeloEstanteCadeirante.glb" 
+            alt="Modelo 3D da Estante"
+            camera-controls
+            touch-action="pan-y"
+            shadow-intensity="1"
+            ar>
+            <button id="ar-button" slot="ar-button">Começar AR</button>
+        </model-viewer>
+    </div>
+    <br>
+</body>
+</html>
