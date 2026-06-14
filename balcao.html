@@ -12,13 +12,19 @@
 </head>
 </head>
 <body>
-    <div class="bar"><a href="index.html"><button class="bar-button">Início</button></a></div>
+    <div class="bar">
+        <ul>
+            <li><a href="index.html"><button class="bar-button">Início</button></a></li>
+            <li style="float:right"><a href="sobre.html"><button class="bar-button">Sobre</button></a></li>
+        </ul>
+    </div>
     <h1>Balcão de Cozinha</h1><br><br><br>
-    <h4>Balcão com estrutura de aço, pintura eletrostática branca e tampo de mármore. Possui 2 gavetas e 1 porta com 1 prateleira interna. Possui 287,68 cm de comprimento, 68 cm de largura e 81,8 cm de altura. <br>Recomendação de Limpeza: Limpar com pano seco para retirar o pó. Não aplicar produtos abrasivos.</h4>
+    <h4>Balcão com estrutura de aço, pintura eletrostática branca e tampo de mármore. Possui 2 gavetas e 1 porta com 1 prateleira interna.<br>Possui 287,68 cm de comprimento, 68 cm de largura e 81,8 cm de altura. O espaço aberto na parte inferior do balcão possui 151,28 cm de comprimento.<br>
+        O móvel não é muito alto para que uma pessoa que necessita de cadeira de rodas possa usar. Também há amplo espaço na parte inferior do móvel para que ela possa chegar perto suficiente para preparar comida.</h4>
     <div class="wrapper-ar">
         <model-viewer        
             src="Modelos/ModeloBalcaoCadeirante.glb" 
-            alt="Modelo 3D do Gabinete"
+            alt="Modelo 3D do Balcão"
             camera-controls
             touch-action="pan-y"
             shadow-intensity="1"
@@ -26,5 +32,6 @@
             <button id="ar-button" slot="ar-button">Começar AR</button>
         </model-viewer>
     </div>
+    <br>
 </body>
 </html>
